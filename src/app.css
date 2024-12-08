@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+@utility interactable {
+	&::after {
+		display: none;
+	}
+
+	@media (any-hover: hover) {
+		&:hover::after {
+			display: block;
+		}
+	}
+}
